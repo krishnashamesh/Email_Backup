@@ -8,7 +8,7 @@ from datetime import datetime
 username = 'Lorem'
 password = 'Ipsum'
 
-# Input your search text here
+# Input your search text here. Currently searches for FROM field. Ref 'Part 2/2' comment
 search_text='xxx@yy.ac.in'
 
 client = IMAPClient("outlook.office365.com", ssl=True)
@@ -22,8 +22,7 @@ client.login(username, password)
 folder_selected = client.select_folder('INBOX', readonly=True)
 print('%d messages in INBOX' % folder_selected[b'EXISTS'])
 
-# Change the criterion as necessary. Check the Py3 documentation. FROM, TO, SINCE, BEFORE
-
+# Change the criterion as necessary. Check the Py3 documentation. FROM, TO, SINCE, BEFORE supported. Part 2/2
 messages = client.search(['FROM', search_text])
 
 # Uncomment to do a blind search
