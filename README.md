@@ -12,3 +12,7 @@ Steps and Guidelines:
 3. Attachments will be downloaded into respective folders
 4. Email messages will be saved as HTML to preserve formatting
 5. Metadata is preserved inside the last sub-folder to enable search. [This will require 'Windows Search finding file content']
+
+Execution Steps
+1. On a terminal, navigate inside src folder
+2. Run "python .\backup.py" without the quotes.
