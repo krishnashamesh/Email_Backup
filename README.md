@@ -9,7 +9,7 @@ Then this script is for you!!!
 # For users without Python Installation
 
 1. Download "Windows Executable.zip" from the repository
-2. Unzip and execute exe_backup.exe
+2. Unzip and Double Click on exe_backup.exe
 
 # For users with Python Installation
 
