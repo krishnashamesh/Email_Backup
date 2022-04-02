@@ -8,7 +8,7 @@ Then this script is for you!!!
 
 # For users without Python Installation
 
-1. Download "Windows Executable.zip" from the repository
+1. Download "Windows Executable.zip" from the repository (https://github.com/krishnashamesh/Email_Backup/raw/main/Windows%20Executable.zip)
 2. Unzip and Double Click on exe_backup.exe
 
 # For users with Python Installation
