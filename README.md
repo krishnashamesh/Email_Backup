@@ -1,10 +1,14 @@
-# Creates a local Backup of the Outlook Account
+Do you want to create a local copy of your email account with attachments and messages?
+
+Do you want to fetch only a couple of emails and cannot afford to import the whole .pst file?
+
+Then this script is for you!!!
+
+# Creates a local Backup of the Email Account
 
 Uses IMAP (Internet Message Access Protocol)
 
-Prerequisites
-1. Python 3
-2. IMAPClient [pip install imapclient]
+Prerequisites : Python 3
 
 Steps and Guidelines:
 1. Input Username, Password and Search Text in the env.properties file
