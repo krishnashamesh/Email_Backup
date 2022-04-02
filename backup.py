@@ -37,10 +37,13 @@ while username == '':
 password = config_props.get('password')
 while password == '':
     password = input(
-        "Please enter the password associated with the account. (You can also set it in the env.properties file) : ")
+        "Please enter the password associated with the account. (You can also set it in the env.properties file): ")
 
 # Currently searches for FROM field. Ref 'Part 2/2' comment
 search_text = config_props.get("search_from_text")
+if search_text == '':
+    search_text = input(
+        "Please enter the search text to be searched. Leave it blank in case you want to backup all the emails in the folder : ")
 
 client = IMAPClient(config_props.get("IMAPClient_host"), ssl=True)
 client.login(username, password)
@@ -69,7 +72,6 @@ for msgid, data in client.fetch(messages, 'RFC822').items():
     email_message = email.message_from_bytes(data[b"RFC822"])
 
     counter = 1
-    # print("Processing Email with ID %d " % msgid)
     for part in email_message.walk():
         filename = part.get_filename()
         content_type = part.get_content_type()
