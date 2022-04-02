@@ -95,10 +95,9 @@ for msgid, data in client.fetch(messages, 'RFC822').items():
                                                                                                        "_").replace(".",
                                                                                                                     "_")
         subject = (subject[:200]) if len(subject) > 200 else subject
-        # subject = (subject[:-1]) if subject[-1] == '.' else subject
 
-        save_location = os.path.join(os.getcwd(), "EmailBackups", "Inbox", datetime.strptime(email_message.get("Date"),
-                                                                                             '%a, %d %b %Y %H:%M:%S +0530').strftime(
+        save_location = os.path.join(os.getcwd(), "EmailBackups", "Inbox", datetime.strptime((email_message.get("Date").split("+")[0]),
+                                                                                             '%a, %d %b %Y %H:%M:%S ').strftime(
             "%d-%m-%Y"), subject).strip()
 
         try:
