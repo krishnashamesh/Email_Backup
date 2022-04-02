@@ -6,6 +6,13 @@ Then this script is for you!!!
 
 # Creates a local Backup of the Email Account
 
+# For users without Python Installation
+
+1. Download "Windows Executable.zip" from the repository
+2. Unzip and execute exe_backup.exe
+
+# For users with Python Installation
+
 Uses IMAP (Internet Message Access Protocol)
 
 Prerequisites : Python 3
