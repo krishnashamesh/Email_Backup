@@ -32,3 +32,4 @@ Please refer to the current issues tab in case of issues.
 Known issues:
 1. Windows executable does not run on Win7 machines
 2. Windows executable throws error when Python version < 3.0 is installed in the host sytem.
+3. Login fails when MFA is activated in Outlook accounts.
