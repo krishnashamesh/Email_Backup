@@ -18,6 +18,12 @@ installed_packages = [r.decode().split('==')[0] for r in reqs.split()]
 # print(installed_packages)
 
 config_props = {}
+
+if not os.path.exists("env.properties"):
+    print()
+    print("env.properties file is not found, please download the repository again or check the permissions of the file.")
+    exit()
+
 with open("env.properties") as props_file:
     for line in props_file:
         if line.startswith("#"):
